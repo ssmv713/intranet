@@ -46,7 +46,7 @@ const Notice = () => {
     const urlParams = new URLSearchParams(location.search);
     urlParams.set("page", value.toString());
     navigate(`?${urlParams.toString()}`, { replace: true });
-    console.log("event", event);
+    console.log(event);
   };
 
   const getPageData = () => {
@@ -61,7 +61,7 @@ const Notice = () => {
       <div className="flex-1 flex flex-col justify-between bg-bg01 p-[16px] rounded">
         <div>
           <div className="border-solid border-y border-border order-indigo-600 flex justify-between px-[12px] py-[8px]">
-            <span className="text-mdBold">제목입니다</span>
+            <span className="text-mdBold">제목</span>
             <span className="text-mdBold">등록일</span>
           </div>
 
